@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import SearchBar from "./SearchBar";
-import VideoList from "./VideoList";
-import VideoDetail from "./VideoDetail";
-import useVideos from "../hooks/useVideos";
+import { SearchBar } from "./SearchBar";
+import { VideoList } from "./VideoList";
+import { VideoDetail } from "./VideoDetail";
+import { useVideos } from "../hooks/useVideos";
 
-const App = () => {
+export const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
 	const [videos, search] = useVideos("Estonia");
 	/* setSelectedVideo(response.data.items[0]); */
@@ -36,5 +36,3 @@ const App = () => {
 		</div>
 	);
 };
-
-export default App;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./VideoItem.css";
 
-const VideoItem = ({ video, onVideoSelect }) => {
+export const VideoItem = ({ video, onVideoSelect }) => {
 	return (
 		<div onClick={() => onVideoSelect(video)} className={"video-item item"}>
 			<img
@@ -15,5 +15,3 @@ const VideoItem = ({ video, onVideoSelect }) => {
 		</div>
 	);
 };
-
-export default VideoItem;
